@@ -1,0 +1,117 @@
+/* Start Variables */
+:root {
+    --main-color: #20bfa9;
+    --bootom-color: #f73859;
+    --font-color: #282828;
+    --normal-color: #ffffff;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Instrument Serif', serif;
+    background-color: #eee;
+
+}
+ul {
+    list-style: none;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* End Global Rules */
+/* start Test_2 */
+    .container {
+        width: 800px;
+        height: 300px;
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: space-around;
+        border-radius: 6px;
+    }
+    .container .box {
+        background-color: white;
+        height: 80%;
+        margin: 30px 0;
+        margin-left: 15px;
+        padding: 5px 30px;
+        border-radius: 6px;
+        background-image: linear-gradient( var(--font-color) 0, var(--font-color) 30%, white 20%, white 100%);
+    }
+    h2 {
+        font-size: 25px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .container .box span {
+        color: #20bfa9;
+    }
+    .box2 {
+        width: 100%;
+        height: 75%;
+        background-color: #ffffff;
+        margin-top: 15px;
+        border-radius: 6px;
+        box-shadow: 0 0 20px 1px var(--font-color);
+    }
+    h3 {
+        font-size: 20px;
+        padding: 15px;
+    }
+    ul {
+        margin-left: 15px;
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    li {
+        margin-bottom: 2px;
+    }
+    i {
+        font-size: 10px;
+        padding-right: 4px;
+        color: var(--bootom-color);
+    }
+    a {
+        text-decoration: none;
+        margin-left: 25px;
+        width: fit-content;
+        padding: 5px 15px;
+        background-color: var(--main-color);
+        color: #ffffff;
+        border-radius: 6px;
+        transition: 0.10ms;
+    }
+    a:hover {
+        background-color: var(--bootom-color);
+    }
+ .line {
+    z-index: 5;
+    width: 1px;
+    height: 80%;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 18px;
+    position: relative;
+}
+.line::before {
+    content: "OR";
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #20bfa9;
+    position: absolute;
+    top: 100px;
+    left: -20px;
+}
+/* End Test_2 */
